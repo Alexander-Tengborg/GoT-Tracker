@@ -1,12 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
 import './Episode.css';
 
+const watchedColor = '#527B4D';
+const notWatchedColor = '#712D39';
+
 class Episode extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            color: notWatchedColor
+        }
+
+        this.onEpisodeClick = this.onEpisodeClick.bind(this);
+    }
+
+    onEpisodeClick() {
+        this.props.onEpisodeClick(this.props.episode);
+    }
+
     render() {
+
+        let color = this.props.watched === true ? watchedColor : notWatchedColor;
+
         return (
-            <div className='episode'>
-                {this.props.data}
+            <div className='episode' style={{backgroundColor: color}} onClick={this.onEpisodeClick}>
+                <h1>{this.props.episode + 1}</h1>
             </div>
         );
     }

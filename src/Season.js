@@ -1,14 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './Season.css';
 
 import Episode from './Episode';
 
 class Season extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.onEpisodeClick = this.onEpisodeClick.bind(this);
+    }
+
+    onEpisodeClick(episode) {
+        this.props.onEpisodeClick(this.props.season, episode);
+    }
+
     render() {
 
-        const episodes = this.props.data.map((data) => {
-            return <Episode data={data} />
+        const episodes = this.props.data.map((watched, episode) => {
+            return <Episode key={this.props.season + episode} watched={watched} episode={episode} onEpisodeClick={this.onEpisodeClick} />
         });
 
         return (
