@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/GoT-Tracker/static/css/main.5cab2242.chunk.css",
+    "main.js": "/GoT-Tracker/static/js/main.028e1302.chunk.js",
+    "main.js.map": "/GoT-Tracker/static/js/main.028e1302.chunk.js.map",
+    "runtime~main.js": "/GoT-Tracker/static/js/runtime~main.c07e7983.js",
+    "runtime~main.js.map": "/GoT-Tracker/static/js/runtime~main.c07e7983.js.map",
+    "static/js/2.0f58faaa.chunk.js": "/GoT-Tracker/static/js/2.0f58faaa.chunk.js",
+    "static/js/2.0f58faaa.chunk.js.map": "/GoT-Tracker/static/js/2.0f58faaa.chunk.js.map",
+    "index.html": "/GoT-Tracker/index.html",
+    "precache-manifest.4e0182caeedb97a9e430f0a3bb4d2f4c.js": "/GoT-Tracker/precache-manifest.4e0182caeedb97a9e430f0a3bb4d2f4c.js",
+    "service-worker.js": "/GoT-Tracker/service-worker.js",
+    "static/css/main.5cab2242.chunk.css.map": "/GoT-Tracker/static/css/main.5cab2242.chunk.css.map"
+  }
+}
